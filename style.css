@@ -1,0 +1,218 @@
+a{
+    text-decoration:none;
+    color: rgba(17,119,176,0.54);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+h1 {
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    font-size: 26pt;
+}
+h2 {
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    font-size: 20pt;
+}
+p {
+    font-size: 14pt;
+}
+.button-link, .gplay-link, .download-link {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    color: #00B0FF;
+}
+.button-link:active {
+    background: rgba(0, 176, 255, 0.1);
+}
+.download-link {
+    color: #00E5FF;
+}
+.download-link:active {
+    background: rgba(0, 229, 255, 0.1);
+}
+.gplay-link {
+    color: #00E676;
+}
+.gplay-link:active {
+    background: rgba(0, 230, 118, 0.1);
+}
+.page {
+    display: block;
+    width: 100%;
+    min-height: 70%;
+    position: relative;
+}
+.bg {
+    background-position: center;
+    background-size: cover;
+}
+.bg-code {
+    background-image: url(bg-code-test.png);
+}
+.bg-build {
+    background-image: url(bg-build.jpg);
+}
+.bg-contact {
+    background-image: url(bg-contact.jpg);
+}
+.card {
+    background: white;
+    border-radius: 2px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 48pt;
+    padding: 20px;
+    padding-top: 60px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.page-content {
+    padding-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    flex-grow: 2;
+}
+.page-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main-card {
+    display: inline-block;
+}
+#main-page-links {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#main-twitter-link {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: url(social-twitter.png);
+    background-size: 100% 100%;
+}
+#main-discord-link {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: url(social-discord.png);
+    background-size: 100% 100%;
+}
+#main-bilibili-link {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: url(social-bilibili.png);
+    background-size: 100% 100%;
+}
+#main-github-link {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url(social-github.png) center no-repeat;
+    background-size: 75% 75%;
+}
+
+#proj-page {
+    min-height: 100%;
+    backface-visibility: hidden;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+#proj-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+}
+#proj-container {
+    padding-bottom: 80px;
+}
+.proj-row {
+    display: flex;
+    flex-direction: row;
+}
+.proj-element {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 10px;
+}
+.proj-links {
+    display: block;
+    list-style-type: none;
+    margin-top: auto;
+    padding: 0;
+}
+.proj-links > li {
+    display: inline-block;
+}
+.proj-links > li > a {
+}
+.proj-closedsource, .proj-opensource {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.54);
+}
+#about-note {
+    min-height: initial;
+    background-position: bottom center;
+    z-index: -1;
+}
+#about-text {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .page-content {
+        width: 100%;
+    }
+    .proj-element {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .page-content > .card, .proj-element {
+        border-radius: 0;
+    }
+    .proj-row {
+        display: block;
+    }
+}
+@media screen and (max-width: 450px) {
+    .page-title {
+        font-size: 30pt;
+    }
+    h1 {
+        font-size: 20pt;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+}
